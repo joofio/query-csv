@@ -16,11 +16,11 @@ data = data[
 ]
 
 elements = st.text_area(
-    "write query for using. For now you must use 'AND' for keys and the app searches everythings that contains with ignorecase",
-    placeholder="biociências AND medicina",
+    "write query for using. For now you must use 'OR' for keys and the app searches everythings that contains with ignorecase",
+    placeholder="biociências OR medicina",
 )
 
-strings = "|".join(elements.split(" AND "))
+strings = "|".join(elements.split(" OR "))
 
 print(strings)
 query = re.compile(
