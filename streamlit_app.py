@@ -10,7 +10,7 @@ import re
 
 st.set_page_config(layout="wide")
 
-data = pd.read_csv("data/merged_file_v4.xlsx - STEP 1 - Complete Database.csv")
+data = pd.read_csv("data/merged_file_v4.xlsx - STEP 2 - Title.csv")
 data = data[
     ["Institution_Name", "Institution_School", "Course_Name", "Course_Level(ii)"]
 ]
