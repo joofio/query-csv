@@ -20,8 +20,8 @@ elements = st.text_area(
     placeholder="biociências OR medicina",
 )
 
-strings = "|".join(elements.split(" OR "))
-
+strings = "|(\A|\W+)".join(elements.split(" OR "))
+strings += "(\A|\W+)" + strings
 print(strings)
 query = re.compile(
     strings,
